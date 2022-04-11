@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* Main */
+h1,
+h2 {
+  font-weight: 900;
+}
+
+:root {
+  --trans-pink: #F535AA;
+  --trans-blue: #469DFF;
+}
+/* Main */
+
+
+/* Font Awesome */
+.fab {
+    font-size: 25px;
+    color: #000;
+    padding: 0 10px;
+}
+
+.fab:hover {
+    color: var(--trans-pink);
+}
+/* Font Awesome */
+
+
+/* start navbar */
+nav .navbar-toggler:focus {
+  border: none;
+  outline: none;
+}
+.navbar .container ul li {
+  padding: 0 20px;
+}
+.navbar .container .navbar-nav .nav-link {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.navbar .container .navbar-nav .nav-link:hover {
+  color: var(--trans-pink);
+}
+/* end navbar */
+
+
+/* start acordian */
+.accordion{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.0rem;
+}
+.accordion-button {
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+.accordion-button:hover {
+  color: var(--trans-blue);
+}
+.accordion-button:not(.collapsed) {
+    color: var(--trans-pink);
+    background-color: #000000;
+}
+.accordion-item:first-of-type, .accordion-item:last-of-type{
+    border-radius: 0px;
+}
+.accordion-item:first-of-type .accordion-button,  .accordion-item:last-of-type .accordion-button{
+    border-radius: 0px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0px;
+}
+.accordion-item {
+    background-color: #FFFFF;
+    border: 1px solid rgb(220,220,220);
+}
+/* end acordian */

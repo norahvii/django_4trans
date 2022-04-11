@@ -1,11 +1,203 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Hi</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/41a307e502.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static "style.css" %}" />
+    <style>
+        section{
+            padding:60px 0px;
+        }
+    </style>
   </head>
+
   <body>
-    <p>Hello World</p>
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-5"
+         style="background-color:#469DFF">
+      <div class="container">
+        {# <img src="{% static "logo.png" %}" alt="" class="img-fluid navbar-brand" /> #}
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#NavbarToggle"
+          aria-controls="NavbarToggle"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="NavbarToggle">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">THE TRANS PINK TAX</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">HOW YOU CAN HELP</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">♥ DONATE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Main -->
+    <div class="container bg-dark">
+      <div class="row">
+        <!-- Left column of response layout -->
+        <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 border bg-white p-3">
+
+          <!-- Start Acordian One -->
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      1) What is electrolysis?
+                  </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse"
+              aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p == $0>
+                      <a href="https://en.wikipedia.org/wiki/Electrology">Electrolysis</a>
+                      is the only method approved by the FDA for permanent removal of unwanted hair. As the hair is treated, regrowth is prevented rather than temporarily removed (like with laser). Only electrolysis provides both hair removal and hair elimination. However, after each session, the hair is merely traumatized. After the hair is repeatedly traumatized, it eventually does die, however this is after many hours (years) of costly, painful treatments. For it to work, a very fine probe is inserted into the hair follicle, an electric current zaps the hair, and the hair is removed with tweezers.
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <!-- End Acordian One -->
+
+          <!-- Start Acordian Two -->
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headinTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapTwo">
+                      2) Why isn't it covered?
+                  </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse"
+              aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p == $0>
+                      While electrolysis is sometimes covered for a planned transgender genital surgery, electrolysis/laser hair removal for any other part of the body is considered cosmetic and not covered. This is unfortunate, because a person's genitals are not a public-facing organ, while the skin on your face is. For a transgender woman, there is nothing "cosmetic" about it; trans activists and insurance companies alike need to rise up and fight for the removal of the "trans pink tax".
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <!-- End Acordian Two -->
+
+          <!-- Start Acordian Three -->
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headinThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapThree">
+                      3) What is the impact on trans women and girls?
+                  </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse"
+              aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Transgender women and girls can feel terrified of imposing an increased economic burden on their parents. They may feel guilty for asking. They may not want to experience hours of pain. They may be intimidated by the financial cost, or have a fear of being degraded as vein. There is an emotional cost, unacknowledged by the pharmaceutical and health insurance industry, that can cause all trans girls to remain in the closet for a lot longer than their transmasculine counterparts. While much progress has been made in trans acceptance, the sad truth is trans women and girls are still largely abandoned to afford vital treatment alone, because the pharmaceutical and health insurance industry has no financial incentive to stand with them.
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <!-- End Acordian Three -->
+
+          <!-- Start Acordian Four -->
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headinFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapFour">
+                      4) How is this issue unfair?
+                  </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse"
+              aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Transgender people usually want to be perceived and taken seriously as members of the gender class in which they feel most comfortable, yet due to the trans pink tax, transgender women generally have a harder time. Transsexual men are able to integrate into mainstream society through employment and social relationships more easily; their natural masculinity (enough by itself in many cases), combined with the external effects of testosterone (which allows them to grow hair painlessly), renders them virtually undetectable in most social situations. Cultural tolerance for a wide variety of adult male looks (appearance styles) and behaviors is also a factor in the success of many transitional men.
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <!-- End Acordian Four -->
+
+          <!-- Start Acordian Five -->
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headinFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapFive">
+                      5) Is laser hair removal a good option?
+                  </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse"
+              aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    It is if you have dark hair and light skin, but even then it's not approved for permanent hair removal by the FDA. If you have dark hair and dark skin, or light hair and light skin, then laser hair removal becomes increasingly less effective, because the machine struggles to "read" the hair. Furthermore, the effects of laser have deminishing returns, which in turn might mean surgical complications. Most surprizingly, some hospitals will cover laser for genital surgery, even though it's not permanent. For them, it's the economical choice. For us, it's a sign they don't value our safety, security, or peace of mind.
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <!-- End Acordian Five -->
+        </div>
+        <!-- Right column of response layout-->
+        <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 border bg-white p-3">
+          <!-- Start Card -->
+          <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">We need your support</h5>
+                <p class="card-text">This information site is raising awareness of an important issue for trans health. Many people don’t know about it, so they can’t care about it. Your donation will not only keep this page alive, it will empower us to lobby for the change that’s still needed to improve trans lives. If insurance providers covered laser and electrolysis, some trans women might transition sooner, while trans youth would have more time to consider their options: secure with the knowledge healthcare providers have their back. Transitioning is not to be taken lightly. Help us.</p>
+                <a href="#" class="btn btn-success stretched-link">DONATE</a>
+                <!-- <a class="ms-3"><a class="text-muted" href="#"><i class="fab fa-paypal"></i></a></a> -->
+                <!-- <a class="ms-3"><a class="text-muted" href="#"><i class="fab fa-vimeo-v"></i></a></a> -->
+              </div>
+          </div>
+          <!-- End Card -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Social Media Bar -->
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-4 border-top">
+        <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+    <!-- End Social Media Bar -->
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+      <script>
+          const toolTips = document.querySelectorAll('.tt');
+          toolTips.forEach(t => {
+              new bootstrap.Tooltip(t)
+          })
+      </script>
 
   </body>
 </html>
