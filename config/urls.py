@@ -16,8 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views
+from newsletter import views as newsletter_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
+    # newsletter
+    path('', newsletter_views.index, name='index'),
+    path('new/', newsletter_views.new, name='new'),
+    path('confirm/', newsletter_views.confirm, name='confirm'),
+    path('delete/', newsletter_views.delete, name='delete')
 ]
